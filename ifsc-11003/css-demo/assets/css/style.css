@@ -11,6 +11,20 @@ html {
   box-sizing: inherit;
 }
 
+/*----------------Utility Classes ----------------*/
+
+.container{
+  width:80vw;
+  /* Make sure it's set to auto. Make browser work it out */
+  margin:20px auto;
+  max-width:1140px;
+}
+
+/*----------------Responsive Images ----------------*/
+img{
+  max-width:100%;
+}
+
 
 /*----------------Global Styles ------------------*/
 
@@ -19,9 +33,9 @@ body{
 }
 
 header.primary{
-  background:mediumspringgreen;
+  background:darkred;
   text-align:center;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 2px 2px 3px #000000;
   color:white;
   /*Single value short hand*/
   padding:40px;
@@ -53,8 +67,58 @@ header.primary h2{
 
 header.primary nav ul{
   padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin:20px 0 10px 0;
 }
 
 header.primary nav ul li{
   list-style-type:none;
+}
+
+header.primary nav ul a{
+  color:#ffffff;
+  background-color:#000000;
+  padding:5px 7.5px;
+  border-radius:20px;
+  text-decoration:none;
+  opacity:.5;
+  background-color:(#000000);
+  background-color:rgba(0, 0, 0, .4);
+  font-size:.9rem;
+  transition:.4s;
+}
+
+header.primary nav a:hover{
+  background-color:rgba(0,0,0,.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries      @media print, screen, all*/
+
+@media screen and (max-width: 550px){
+  header.primary nav ul{
+  flex-direction:column;
+  gap: 12px;
+  }
+
+  header.primary nav ul a{
+    display:block;
+  }
 }
