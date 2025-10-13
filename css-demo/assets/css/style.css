@@ -1,0 +1,212 @@
+/* ---- CSS Demo ---- */
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*----------------Utility Classes ----------------*/
+
+.container{
+  width:80vw;
+  max-width:1140px;
+  /* Make sure it's set to auto. Make browser work it out */
+  margin:20px auto;
+  
+}
+
+/*----------------Responsive Images ----------------*/
+img{
+  max-width:100%;
+}
+
+
+/*----------------Global Styles ------------------*/
+
+body{
+    font-family: "Jost", sans-serif;
+}
+
+header.primary{
+  background:darkred;
+  text-align:center;
+  text-shadow: 2px 2px 3px #000000;
+  color:white;
+  /*Single value short hand*/
+  padding:40px;
+  /*Long Form*/
+  padding-top:40px;
+  padding-right:40px;
+  padding-bottom:40px;
+  padding-left:40px;
+  /* T,R,B,L */
+  padding: 20px 40px 20px 40px;
+  /*Two value Top/Bottom / L/r */
+  padding: 20px 40px;
+}
+
+header.primary h1{
+  font-size: 2.4rem;
+}
+
+header.primary h1 a{
+  color:#ffffff;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size: 1.4rem;
+  letter-spacing:0.2px;
+  margin:10px 0 0 0;
+}
+
+header.primary nav ul{
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin:20px 0 10px 0;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+}
+
+header.primary nav ul a{
+  color:#ffffff;
+  background-color:#000000;
+  padding:5px 7.5px;
+  border-radius:20px;
+  text-decoration:none;
+  opacity:.5;
+  background-color:(#000000);
+  background-color:rgba(0, 0, 0, .4);
+  font-size:.9rem;
+  transition:.4s;
+}
+
+header.primary nav a:hover{
+  background-color:rgba(0,0,0,.8);
+}
+
+
+#intro h2{
+  color:#3B638B;
+  border-bottom:1px dotted #000;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0;
+  margin: 30px auto 30px auto;
+}
+
+#content .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  font-size:.7rem;
+}
+
+#content .post figure{
+  margin:0;
+}
+
+#content time.post-date, #content figcaption{
+  text-transform:uppercase;
+  font-size:.6rem;
+}
+
+#content a{
+ color:#3B638B;
+ transition:.4s;
+}
+
+#content a:hover{
+  text-decoration:none;
+}
+
+aside[role="complementary"]{
+  background-color: #172635;
+  color:#ffffff;
+  padding:40px 0;
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:40px;
+}
+
+aside .container a{color:#ffffff;}
+
+aside .container a:hover{text-decoration:none;}
+
+aside .container a:last-child{
+  display:block;
+  text-align:right;
+  margin-top:20px;
+}
+
+aside .widget footer{
+  display:none;
+}
+
+/* padding: 1px fixes some issues with spacing */
+#colophon{
+  background-color: #3b638b;
+  padding:5px;
+  text-align:center;
+  font-weight:bold;
+  color:#ffffff;
+}
+
+.img-left{
+  float:left;
+  margin: 10px 20px 10px 0;
+  border: 2px double #cccccc;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries      @media print, screen, all*/
+
+@media screen and (max-width: 550px){
+  header.primary nav ul{
+  flex-direction:column;
+  gap: 12px;
+  }
+
+  header.primary nav ul a{
+    display:block;
+  }
+
+  .container{
+    background-color:transparent;
+    width:90vw;
+    margin:20px auto;
+  }
+}
