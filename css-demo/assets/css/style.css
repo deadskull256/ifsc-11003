@@ -136,6 +136,74 @@ header.primary nav a:hover{
   text-decoration:none;
 }
 
+#practice h2{
+  color:darkred;
+  border-bottom:1px dotted #cccccc;
+}
+
+#practice a{
+  color: darkred;
+}
+
+#practice a:hover{
+  text-decoration:none;
+}
+
+#practice h3{
+  border-left: 7.5px solid darkred;
+  padding: 7.5px;
+}
+
+#practice table{
+  width:100%;
+  border:1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+
+#practice caption{
+  font-weight:bold;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+
+#practice tr:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#practice tr:hover{
+  background-color:rgba(0, 0, 0, 0.3);
+}
+
+#practice td:nth-child(1n+2){
+  text-align:right;
+}
+
+#practice td:nth-child(2), #practice td:nth-child(3){
+
+}
+
+#practice th{
+  background-color:red;
+  color:#ffffff;
+  padding:7.5px;
+}
+#practice td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+#practice ol{
+  list-style-type:upper-roman;
+  padding-left:2rem;
+  line-height:1.5rem;
+}
+
+#practice li{
+  margin-bottom: 0.5rem;
+}
+
+
+
 aside[role="complementary"]{
   background-color: #172635;
   color:#ffffff;
@@ -172,12 +240,8 @@ aside .widget footer{
   color:#ffffff;
 }
 
-.img-left{
-  float:left;
-  margin: 10px 20px 10px 0;
-  border: 2px double #cccccc;
-  padding: 5px;
-}
+
+
 
 
 
