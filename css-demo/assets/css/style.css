@@ -207,10 +207,6 @@ header.primary nav a:hover{
   text-align:right;
 }
 
-#practice td:nth-child(2), #practice td:nth-child(3){
-
-}
-
 #practice th{
   background-color:red;
   color:#ffffff;
