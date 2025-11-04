@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: "Jost", sans-serif;
+    margin:0;
+    line-height:1.5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-area:
+            "header"
+            "content"
+            ".."
+            "footer";
+}
+
+.navtext{
+    line-height: 1.2;
+    padding: 5px 0;
+    position: relative;
+    transition: none;
+}
+
+header.primary {
+    grid-area: header;
+}
+
+#main-content{
+    grid-area: content;
+}
+
+#footer{
+    grid-area: footer;
+}
