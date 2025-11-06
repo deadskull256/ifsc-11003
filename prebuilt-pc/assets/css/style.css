@@ -27,7 +27,7 @@ body{
 }
 
 header.primary{
-  background:#7A37FF;
+  background: #B00B69;
   text-align:left;
   text-shadow: 2px 2px 3px #ffffff;
   color:white;
@@ -157,7 +157,7 @@ footer.primary{
 
 /* Media Queries      @media print, screen, all*/
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 481px){
   header.primary nav ul{
   flex-direction:column;
   gap: 12px;
@@ -175,5 +175,7 @@ footer.primary{
     background-color:transparent;
     width:90vw;
     margin:20px auto;
-  }
+  }  
+  img { max-width: 100% }
+  input, textarea { max-width: 100% }
 }
