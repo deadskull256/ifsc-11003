@@ -20,29 +20,6 @@ body{
     line-height:1.5;
 }
 
-.container{
-  width:80vw;
-  max-width:1140px;
-  margin:20px auto;
-}
-
-header.primary{
-  background: #B00B69;
-  text-align:left;
-  text-shadow: 2px 2px 3px #ffffff;
-  color:white;
-  /*Single value short hand*/
-  padding:40px;
-}
-
-footer.primary{
-  background:#161616;
-  text-shadow: 2px 2px 3px #000000;
-  color:white;
-  /*Single value short hand*/
-  padding:40px;
-}
-
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -51,6 +28,23 @@ main {
 
 .navtext{
     padding: 5px 0;
+}
+
+.container{
+  width:80vw;
+  max-width:1140px;
+  margin:20px auto;
+}
+
+/* Header CSS */
+
+header.primary{
+  background: #B00B69;
+  text-align:left;
+  text-shadow: 2px 2px 3px #ffffff;
+  color:white;
+  /*Single value short hand*/
+  padding:40px;
 }
 
 header.primary {
@@ -105,6 +99,8 @@ header.primary nav a:hover{
   align-items: center;
 }
 
+/* Main Body CSS */
+
 #main-content{
     grid-column-start:1;
     grid-column-end: 2;
@@ -112,6 +108,14 @@ header.primary nav a:hover{
     grid-row-end: 3;
     text-align: center;
     border-bottom: 1px solid #000;
+}
+
+#about-content{
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
 }
 
 #product{
@@ -143,6 +147,8 @@ header.primary nav a:hover{
     max-width: 100%;
 }
 
+/* Footer CSS */
+
 footer.primary{
     grid-column-start:1;
     grid-column-end: 2;
@@ -150,10 +156,37 @@ footer.primary{
     grid-row-end: 4;
 }
 
+footer.primary{
+  background:#161616;
+  text-shadow: 2px 2px 3px #000000;
+  color:white;
+  /*Single value short hand*/
+  padding:40px;
+}
 
+/* CSS for Contact.html */
 
+.contact{
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  max-width: 400px;
+  list-style-type: none;
+}
 
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
 
+.contactMain{
+  grid-template-rows: 1fr 4fr 1fr;
+}
 
 /* Media Queries      @media print, screen, all*/
 
