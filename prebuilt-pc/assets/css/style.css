@@ -1,4 +1,4 @@
-/*  ---------------Box Sizing-----------------  */
+/*  ------------------------ Box Sizing -----------------------------  */
 html {
   box-sizing: border-box;
 }
@@ -8,12 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-/*----------------Responsive Images ----------------*/
+/*------------------------- Responsive Images -----------------------------*/
 img{
   max-width:100%;
 }
 
-/*----------------Global Styles ------------------*/
+/*------------------------- Global Styles ---------------------------------*/
 body{
     font-family: "Jost", sans-serif;
     margin:0;
@@ -36,7 +36,7 @@ main {
   margin:20px auto;
 }
 
-/* Header CSS */
+/*-------------------------------- Header CSS ---------------------------------*/
 
 header.primary{
   background: #B00B69;
@@ -81,7 +81,7 @@ header.primary nav ul a{
   color:#ffffff;
   background-color:#000000;
   padding:5px 7.5px;
-  border-radius:80px;
+  border-radius:800rem;
   text-decoration:none;
   opacity:1;
   background-color:(#000000);
@@ -99,7 +99,7 @@ header.primary nav a:hover{
   align-items: center;
 }
 
-/* Main Body CSS */
+/*----------------------------- Main Body CSS ----------------------------*/
 
 #main-content{
     grid-column-start:1;
@@ -118,6 +118,8 @@ header.primary nav a:hover{
   text-align: center;
 }
 
+
+/*-------------------------- Product ------------------------------------------ */
 #product{
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +131,11 @@ header.primary nav a:hover{
 #product h1 {
     flex-basis: 100%;
     margin-bottom: 10px;
+}
+
+#product img {
+    display:flex;
+    text-align: center;
 }
 
 .pc{
@@ -147,7 +154,7 @@ header.primary nav a:hover{
     max-width: 100%;
 }
 
-/* Footer CSS */
+/*---------------------------- Footer CSS -------------------------------------------*/
 
 footer.primary{
     grid-column-start:1;
@@ -164,7 +171,7 @@ footer.primary{
   padding:40px;
 }
 
-/* CSS for Contact.html */
+/*---------------------------- CSS for Contact.html ---------------------------------*/
 
 .contact{
   grid-column-start:1;
@@ -186,6 +193,12 @@ footer.primary{
 
 .contactMain{
   grid-template-rows: 1fr 4fr 1fr;
+}
+
+/*--------------------------- CSS for our-pcs.html ----------------------------*/
+
+.pcMain{
+  grid-template-rows: 1fr 7fr 4fr;
 }
 
 /* Media Queries      @media print, screen, all*/
