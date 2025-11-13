@@ -26,10 +26,6 @@ main {
     grid-template-rows: 1fr 4fr;
 }
 
-.navtext{
-    padding: 5px 0;
-}
-
 .container{
   width:80vw;
   max-width:1140px;
@@ -42,7 +38,6 @@ header.primary{
   background: #B00B69;
   text-align:left;
   text-shadow: 2px 2px 3px #ffffff;
-  color:white;
   /*Single value short hand*/
   padding:40px;
 }
@@ -148,10 +143,6 @@ header.primary nav a:hover{
     margin: 20px;
     border-radius: 8px;
     width: 400px;
-}
-.pc img {
-    display: block;
-    max-width: 100%;
 }
 
 /*---------------------------- Footer CSS -------------------------------------------*/
