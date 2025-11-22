@@ -178,12 +178,41 @@ footer.primary{
 .field {
   display: flex;
   flex-direction: column;
+  font-size: 1.2rem;
   gap: 5px;
   margin-bottom: 15px;
 }
 
 .contactMain{
-  grid-template-rows: 1fr 4fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-template-rows: 8rem 15rem 1fr;
+}
+
+body p.contactParagraph{
+  border-bottom: 1px solid black;
+}
+
+body #contact-header{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.contactInput{
+  width: 20rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.contactRequired{
+  color: #790000;
+}
+
+#message{
+  font-size: 1.2rem;
 }
 
 /*--------------------------- CSS for our-pcs.html ----------------------------*/
