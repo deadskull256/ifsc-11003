@@ -32,7 +32,7 @@
                 </div>
             </header>
 
-            <section id="contact-header" class="container contactMain">
+            <section id="contact-header" class="container">
                 <h2>Contact Us</h2>
                 <p class="contactParagraph">Lorem ipsum dolor sit amet
                     consectetur adipisicing elit. Architecto nobis voluptate
@@ -50,54 +50,58 @@
                     deleniti expedita voluptatibus error debitis, aspernatur
                     animi qui autem
                     ad nobis asperiores!</p>
+                <form class="contactMain">
+                    <ul class="contact">
+                        <li>
+                            <div class="field name">
+                                <label for="name">Full Name:
+                                    <span class="contactRequired"
+                                        title="Required">*</span>
+                                </label>
+                                <input type="text" class="contactInput"
+                                    name="fullName"
+                                    minlength="5" maxlength="30"
+                                    placeholder="John Doe" required />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="field email">
+                                <label for="email">Email:
+                                    <span class="contactRequired"
+                                        title="Required">*</span>
+                                </label>
+                                <input type="email" class="contactInput"
+                                    name="email"
+                                    pattern=".+@example\.com" size="30"
+                                    placeholder="johndoe@example.com"
+                                    required />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="field phoneNumber">
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input type="number" class="contactInput"
+                                    name="phoneNumber" minlength="10"
+                                    maxlength="10"
+                                    placeholder="(123)456-7891" />
+                            </div>
+                        </li>
+                        <li>
+                            <div class="field message">
+                                <label for="message">Message:
+                                    <span class="contactRequired"
+                                        title="Required">*</span>
+                                </label>
+                                <textarea id="message" name="message" rows="10"
+                                    cols="50"
+                                    placeholder="Please Enter Your message Here..."
+                                    required></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
             </section>
 
-            <form class="contactMain">
-                <ul class="contact">
-                    <li>
-                        <div class="field name">
-                            <label for="name">Full Name:
-                                <span class="contactRequired"
-                                    title="Required">*</span>
-                            </label>
-                            <input type="text" class="contactInput"
-                                name="fullName"
-                                minlength="5" maxlength="30"
-                                placeholder="John Doe" required />
-                        </div>
-                    </li>
-                    <li>
-                        <div class="field email">
-                            <label for="email">Email:
-                                <span class="contactRequired"
-                                    title="Required">*</span>
-                            </label>
-                            <input type="email" class="contactInput"
-                                name="email"
-                                pattern=".+@example\.com" size="30"
-                                placeholder="johndoe@example.com" required />
-                        </div>
-                    </li>
-                    <li>
-                        <div class="field phoneNumber">
-                            <label for="phoneNumber">Phone Number:</label>
-                            <input type="number" class="contactInput"
-                                name="phoneNumber" minlength="10" maxlength="10"
-                                placeholder="(123)456-7891" />
-                        </div>
-                    </li>
-                    <li>
-                        <div class="field message">
-                            <label for="message">Message:
-                                <span class="contactRequired"
-                                    title="Required">*</span>
-                            </label>
-                            <textarea id="message" name="message" rows="10"
-                            cols="50" placeholder="Please Enter Your message Here..." required></textarea>
-                        </div>
-                    </li>
-                </ul>
-            </form>
         </main>
 
         <footer class="primary">

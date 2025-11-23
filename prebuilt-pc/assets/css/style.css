@@ -23,7 +23,7 @@ body{
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 8rem 20rem 1fr;
 }
 
 .container{
@@ -151,7 +151,7 @@ footer.primary{
     grid-column-start:1;
     grid-column-end: 2;
     grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row-end: 5;
 }
 
 footer.primary{
@@ -184,14 +184,16 @@ footer.primary{
 }
 
 .contactMain{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  width: fit-content;
+  margin-left: 0;
+  margin-right: auto;
   grid-template-rows: 8rem 15rem 1fr;
 }
 
 body p.contactParagraph{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
+  margin-bottom: 1.5rem;
 }
 
 body #contact-header{
@@ -220,6 +222,21 @@ body #contact-header{
 .pcMain{
   grid-template-rows: 1fr 7fr 4fr;
 }
+
+.pc{
+  
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+
+/*-------------------------- CSS for about.html -------------------------------*/
+.aboutMain{
+  grid-template-rows: 8rem 50rem 1fr;
+}
+
 
 /* Media Queries      @media print, screen, all*/
 
