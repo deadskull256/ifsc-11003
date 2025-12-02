@@ -1,0 +1,299 @@
+/*  ------------------------ Box Sizing -----------------------------  */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*------------------------- Responsive Images -----------------------------*/
+img{
+  max-width:100%;
+}
+
+/*------------------------- Global Styles ---------------------------------*/
+body{
+    font-family: "Jost", sans-serif;
+    margin:0;
+    line-height:1.5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8rem auto auto 1fr;
+}
+
+.container{
+  width:80vw;
+  max-width:1140px;
+  margin:20px auto;
+}
+
+/*-------------------------------- Header CSS ---------------------------------*/
+
+header.primary{
+  background: #B00B69;
+  text-align:left;
+  text-shadow: 2px 2px 3px #ffffff;
+  /*Single value short hand*/
+  padding:40px;
+}
+
+header.primary {
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header.primary nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header.primary nav ul{
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  gap: 20rem;
+  margin:20px 0 10px 0;
+  padding: 0;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+}
+
+header.primary nav ul a{
+  color:#ffffff;
+  background-color:#000000;
+  padding:5px 7.5px;
+  border-radius:800rem;
+  text-decoration:none;
+  opacity:1;
+  background-color:(#000000);
+  background-color:rgba(0, 0, 0, .4);
+  font-size:1rem;
+  transition:.4s;
+}
+
+header.primary nav a:hover{
+  background-color:rgba(255, 255, 255, 0.8);
+}
+
+.header-padding {
+  display: flex;
+  align-items: center;
+}
+
+/*----------------------------- Main Body CSS ----------------------------*/
+
+#main-content{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+#about-content{
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+
+
+
+/*-------------------------- Image Slideshow ---------------------------------- */
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+.fade{
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*-------------------------- Product ------------------------------------------ */
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#product h1 {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+#product img {
+    display:flex;
+    text-align: center;
+}
+
+.pc{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+/*---------------------------- Footer CSS -------------------------------------------*/
+
+footer.primary{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+footer.primary{
+  background:#161616;
+  text-shadow: 2px 2px 3px #000000;
+  color:white;
+  /*Single value short hand*/
+  padding:40px;
+}
+
+/*---------------------------- CSS for Contact.html ---------------------------------*/
+
+.contact{
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  max-width: 400px;
+  list-style-type: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.contactMain{
+  display: block;
+  width: fit-content;
+  margin-left: 0;
+  margin-right: auto;
+  grid-template-rows: 8rem 15rem 1fr;
+}
+
+body p.contactParagraph{
+  border-bottom: 1px solid;
+  margin-bottom: 1.5rem;
+}
+
+body #contact-header{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.contactInput{
+  width: 20rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.contactRequired{
+  color: #790000;
+}
+
+#message{
+  font-size: 1.2rem;
+}
+
+/*--------------------------- CSS for our-pcs.html ----------------------------*/
+
+.pcMain{
+  grid-template-rows: 1fr 7fr 4fr;
+}
+
+.pc{
+  
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+
+/*-------------------------- CSS for about.html -------------------------------*/
+.aboutMain{
+  grid-template-rows: 8rem 50rem 1fr;
+}
+
+
+/* Media Queries      @media print, screen, all*/
+
+@media screen and (max-width: 481px){
+  header.primary nav ul{
+  flex-direction:column;
+  gap: 12px;
+  }
+
+  header.primary nav ul a{
+    display:block;
+  }
+
+  #content{
+    flex-direction:column;
+  }
+
+  .container{
+    background-color:transparent;
+    width:90vw;
+    margin:20px auto;
+  }  
+  img { max-width: 100% }
+  input, textarea { max-width: 100% }
+}
