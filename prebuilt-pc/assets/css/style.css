@@ -23,7 +23,7 @@ body{
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8rem 55rem 1fr;
+    grid-template-rows: 8rem auto auto 1fr;
 }
 
 .container{
@@ -136,6 +136,17 @@ header.primary nav a:hover{
 .slick-autoplay-toggle-button:focus 
 {
     color:black;
+}
+
+.fade{
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*-------------------------- Product ------------------------------------------ */
