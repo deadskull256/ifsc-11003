@@ -23,7 +23,7 @@ body{
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8rem 20rem 1fr;
+    grid-template-rows: 8rem 55rem 1fr;
 }
 
 .container{
@@ -113,6 +113,30 @@ header.primary nav a:hover{
   text-align: center;
 }
 
+
+
+/*-------------------------- Image Slideshow ---------------------------------- */
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
 
 /*-------------------------- Product ------------------------------------------ */
 #product{
