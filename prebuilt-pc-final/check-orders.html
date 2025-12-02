@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Prebuilt PC Company Website">
+        <meta name="Valkron Forge's Website. Best Prebuilt PC Company"
+            content="Valkron Forge Website">
         <meta name="author" content="Mathew Downie">
         <link href="./assets/css/style.css" rel="stylesheet" />
-        <link rel="icon" href="https://placehold.co/16x16" />
-        <title>PC Prebuilt Company</title>
+        <link rel="icon" href="./assets/img/companyLogo.png" />
+        <title>Valkron Forge</title>
     </head>
 
     <body>
@@ -15,7 +16,7 @@
                 <div class="header-padding">
                     <a class="logo_link" href="./index.html">
                         <img class="navicon" alt="company logo"
-                            src="https://placehold.co/80x80" />
+                            src="./assets/img/companyLogo.png" />
                     </a>
                     <nav class="primary">
                         <ul>
@@ -32,6 +33,64 @@
                 </div>
             </header>
 
+            <section id="main-content" class="container">
+                <h1>Check Your Orders</h1>
+                <p>Please fill in your order information to find your order.
+                    If your information connects to an order, your order will
+                    show up and will give details about your order. We are not
+                    the shipping company, please don't contact us about shipping
+                    of your order. You may obtain your shipping number via email.
+                </p>
+            </section>
+
+
+
+
+            <form class="checkMain">
+                <ul class="check">
+                    <li>
+                        <div class="field name">
+                            <label for="name-on-order">Name on Order:
+                                <span class="contactRequired"
+                                    title="Required">*</span>
+                            </label>
+                            <input type="text" class="contactInput"
+                                name="fullName"
+                                minlength="5" maxlength="30"
+                                placeholder="John Doe" required />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field address">
+                            <label for="address">Address:
+                                <span class="contactRequired"
+                                    title="Required">*</span>
+                            </label>
+                            <input type="text" class="contactInput"
+                                name="email" size="30"
+                                placeholder="1234 Example Drive"
+                                required />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="field orderNumber">
+                            <label for="orderNumber">Order Number:
+                                <span class="contactRequired" title="Required">*</span>
+                            </label>
+                            <input type="text" class="contactInput"
+                                name="orderNumber" minlength="10"
+                                maxlength="10"
+                                placeholder="0395743D2H" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="submission">
+                            <input type="submit" class="submitButton" />
+                        </div>
+                    </li>
+                </ul>
+            </form>
+
         </main>
         <footer class="primary">
             <h3>Contact and Information</h3>
@@ -39,8 +98,9 @@
                 <ul title="Unordered List">
                     <li><a href="../index.html">Home</a></li>
                     <li><a
-                            href="https://en.wikipedia.org/wiki/University_of_Arkansas_at_Little_Rock">About</a></li>
-                    <li><a href="#top" target="_blank">UALR</a></li>
+                            href="https://catalog.ualr.edu/preview_program.php?catoid=20&poid=5392">About</a></li>
+                    <li><a href="https://ualr.edu/"
+                            target="_blank">UALR</a></li>
                     <li><a href="mailto:msdownie@ualr.edu">Contact</a></li>
                 </ul>
             </nav>
