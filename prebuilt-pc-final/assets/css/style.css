@@ -19,13 +19,14 @@ body {
   font-family: "Jost", sans-serif;
   margin: 0;
   line-height: 1.5;
+  background-color: white;
+  color:black;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 8rem auto auto 1fr;
-  background: gray;
 }
 
 .navicon {
@@ -39,12 +40,34 @@ main {
   margin: 20px auto;
 }
 
+
+/*-------------------------------- Dark Mode CSS ------------------------------*/
+.dark-mode{
+  background-color: black;
+  color: white;
+}
+
+.dark-mode header.primary nav ul a {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  text-shadow: 1px 1px 1px white;
+}
+
+.dark-mode header.primary nav a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.dark-mode .pc{
+  border: 1px solid white;
+}
+
 /*-------------------------------- Header CSS ---------------------------------*/
 
 header.primary {
   background: transparent;
   text-align: left;
-  text-shadow: 2px 2px 3px #ffffff;
+  text-shadow: 2px 2px 3px black;
   /*Single value short hand*/
   padding: 40px;
 }
@@ -93,13 +116,23 @@ header.primary nav ul a {
 }
 
 header.primary nav a:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .header-padding {
   display: flex;
   align-items: center;
 }
+
+#darkToggle{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
 
 /*----------------------------- Main Body CSS ----------------------------*/
 

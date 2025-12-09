@@ -11,3 +11,9 @@ $(document).ready(function() {
         autoplaySpeed: 2000
     });
 });
+
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
