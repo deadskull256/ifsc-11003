@@ -55,7 +55,7 @@
                                     <span class="contactRequired"
                                         title="Required">*</span>
                                 </label>
-                                <input type="text" class="contactInput"
+                                <input id="name" type="text" class="contactInput"
                                     name="fullName"
                                     minlength="5" maxlength="30"
                                     placeholder="John Doe" required />
@@ -67,7 +67,7 @@
                                     <span class="contactRequired"
                                         title="Required">*</span>
                                 </label>
-                                <input type="email" class="contactInput"
+                                <input id="email" type="email" class="contactInput"
                                     name="email"
                                     pattern=".+@example\.com" size="30"
                                     placeholder="johndoe@example.com"
@@ -77,7 +77,7 @@
                         <li>
                             <div class="field phoneNumber">
                                 <label for="phoneNumber">Phone Number:</label>
-                                <input type="number" class="contactInput"
+                                <input id="phoneNumber" type="tel" class="contactInput"
                                     name="phoneNumber" minlength="10"
                                     maxlength="10"
                                     placeholder="(123)456-7891" />
